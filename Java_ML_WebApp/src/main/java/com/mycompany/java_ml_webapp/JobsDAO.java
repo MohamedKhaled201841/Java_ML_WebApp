@@ -7,15 +7,7 @@ import java.util.List;
  * 
  * @author Omar Safwat
  */
-public interface JobsDAO {
+public interface JobsDAO<T> {
     
-    public List<Job> getAllJobs();
-    
-    public Job getJob(int index);
-    
-    // Method updates a record in DataFrame with "job"
-    public void updateJob(Job job);
-    
-    // Method removes record holding "job" from the DataFrame
-    public void deleteJob(Job job);
+    public T getAllJobs();
 }
