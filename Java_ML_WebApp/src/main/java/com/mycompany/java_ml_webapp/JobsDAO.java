@@ -15,7 +15,7 @@ public interface JobsDAO<T> {
     public T getAllJobs();
     
     // Method should remove null rows and duplicates
-    public T cleanData();
+    public T cleanData(T data);
     
     // Method returns feature as int array with encoded values
     public int[] encodeFeature(String featureName);
