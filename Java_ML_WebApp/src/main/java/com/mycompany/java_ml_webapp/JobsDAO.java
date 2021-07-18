@@ -9,5 +9,14 @@ import java.util.List;
  */
 public interface JobsDAO<T> {
     
+    // Implementation should include a private attribute, manipulated by the methods below
+    
+    // Returns the dataset to user
     public T getAllJobs();
+    
+    // Method should remove null rows and duplicates
+    public T cleanData();
+    
+    // Method returns feature as int array with encoded values
+    public int[] encodeFeature(String featureName);
 }
