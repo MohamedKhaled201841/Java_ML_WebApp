@@ -18,5 +18,5 @@ public interface JobsDAO<T> {
     public T cleanData(T data);
     
     // Method returns feature as int array with encoded values
-    public int[] encodeFeature(String featureName);
+    public int[] encodeFeature(T data, String featureName);
 }
