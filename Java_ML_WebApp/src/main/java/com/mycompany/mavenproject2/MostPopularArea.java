@@ -16,7 +16,7 @@ import smile.data.DataFrame;
 public class MostPopularArea {
 
     public static void main(String[] args) {
-        JobsCSVDAO dao = new JobsCSVDAO();
+        com.mycompany.mavenproject2.JobsCSVDAO dao = new com.mycompany.mavenproject2.JobsCSVDAO();
         String filePath = "src/main/resources/data/Wuzzuf_Jobs.csv";
         dao.readCSV(filePath);
         DataFrame jobs = dao.getAllJobs();
